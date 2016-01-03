@@ -6,6 +6,9 @@ A number value range slider made by Swift
 
 ##
 How to use
+
+Add GZRangeSlider.swift to your project
+
 ```
 //init
 let kWidth: CGFloat = 300
