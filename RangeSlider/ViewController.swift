@@ -15,11 +15,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let kWidth: CGFloat = 300
         let rangeSlider = GZRangeSlider(frame: CGRectMake(0.5 * (view.frame.width - kWidth),64,kWidth,120))
-        rangeSlider.setRange(20, maxRange: 10000, accuracy: 50)
-        rangeSlider.valueChangeClosure = {
-            (left, right) -> () in
-            print("left = \(left)  right = \(right) \n")
-        }
+rangeSlider.setRange(20, maxRange: 10000, accuracy: 50)
+rangeSlider.valueChangeClosure = {
+    (left, right) -> () in
+    print("left = \(left)  right = \(right) \n")
+}
         view.addSubview(rangeSlider)
     }
 
