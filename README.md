@@ -5,14 +5,14 @@
 ##
 How to use
 ```
-### init
+## init
 let kWidth: CGFloat = 300
 let rangeSlider = GZRangeSlider(frame: CGRectMake(0.5 * (view.frame.width - kWidth),64,kWidth,120))
 
-### set range add accuracy
+## set range and accuracy
 rangeSlider.setRange(20, maxRange: 10000, accuracy: 50)
 
-### set value change closure
+## set value change closure
 rangeSlider.valueChangeClosure = {
     (left, right) -> () in
     print("left = \(left)  right = \(right) \n")
